@@ -1,0 +1,117 @@
+{
+  "effectiveDate": "{{startDate}}",
+  "currency": "USD",
+  "premium": {{premium}},
+  "fees": [],
+  "paymentPlanTemplate": {
+    "filing": {
+      "filingId": "CCInsCoOR",
+      "region": "US-OR",
+      "filingDate": "2020-12-01"
+    },
+    "plans": [
+      {
+        "planId": "faf9399a-f1af-4cc3-8dc4-0944c6603e45",
+        "planName": "Paid in Full - Credit Card",
+        "planEnum": "full_pay_cc",
+        "description": "REDACTED-String",
+        "paymentFrequency": "full_pay",
+        "paymentMethod": "credit_card",
+        "template": {
+          "currency": "USD",
+          "numberOfPayments": 1,
+          "period": {
+            "unit": "MONTH",
+            "length": 6
+          },
+          "downPayment": {
+            "amount": 100,
+            "type": "PERCENT"
+          },
+          "fees": []
+        }
+      },
+      {
+        "planId": "08e0c757-784d-47fa-9dbe-3df2c4f43c3f",
+        "planName": "Paid in Full - Bank Account",
+        "planEnum": "full_pay_ach",
+        "description": "REDACTED-String",
+        "paymentFrequency": "full_pay",
+        "paymentMethod": "bank_account",
+        "template": {
+          "currency": "USD",
+          "numberOfPayments": 1,
+          "period": {
+            "unit": "MONTH",
+            "length": 6
+          },
+          "downPayment": {
+            "amount": 100,
+            "type": "PERCENT"
+          },
+          "fees": []
+        }
+      },
+      {
+        "planId": "4de5f30c-05a6-461d-ad05-c98b9475e80f",
+        "planName": "Pay 6 installments - Credit Card",
+        "planEnum": "six_monthly_equal_payment_cc",
+        "description": "REDACTED-String",
+        "paymentFrequency": "monthly_equal_payment",
+        "paymentMethod": "credit_card",
+        "template": {
+          "currency": "USD",
+          "numberOfPayments": 6,
+          "period": {
+            "unit": "MONTH",
+            "length": 1
+          },
+          "downPayment": {
+            "amount": 16.67,
+            "type": "PERCENT"
+          },
+          "fees": [
+            {
+              "name": "installment",
+              "type": "PER_INSTALLMENT",
+              "paymentType": {
+                "amount": 2,
+                "type": "FLATFEE"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "planId": "eea2bb96-2da5-4ab7-9c4d-759a4070e926",
+        "planName": "Pay 6 installments - Bank Account",
+        "planEnum": "six_monthly_equal_payment_ach",
+        "description": "REDACTED-String",
+        "paymentFrequency": "monthly_equal_payment",
+        "paymentMethod": "bank_account",
+        "template": {
+          "currency": "USD",
+          "numberOfPayments": 6,
+          "period": {
+            "unit": "MONTH",
+            "length": 1
+          },
+          "downPayment": {
+            "amount": 16.67,
+            "type": "PERCENT"
+          },
+          "fees": [
+            {
+              "name": "installment",
+              "type": "PER_INSTALLMENT",
+              "paymentType": {
+                "amount": 2,
+                "type": "FLATFEE"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

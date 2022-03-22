@@ -1,0 +1,153 @@
+{
+  "policyRequest": {
+    "agreement": {
+      "bindDate": "{{startDate}}T07:00:00-06:00",
+      "inceptionDate": "{{startDate}}T07:00:00-06:00",
+      "agreementType": "auto_policy",
+      "product": {
+        "externalRef": {
+          "sourceSystem": "clearcover-acquisition",
+          "sourceEntityId": "CCInsCoOR",
+          "sourceEntityType": "product_config"
+        }
+      }
+    },
+    "effectivePeriod": {
+      "startAt": "{{startDate}}T07:00:00-06:00",
+      "endAt": "{{endDate}}T22:00:00-07:00"
+    },
+    "policyHolders": [
+      {
+        "policyHolderType": "person",
+        "person": {
+          "dateOfBirth": "1971-04-13",
+          "primaryLanguage": "en-US",
+          "phoneNumbers": [
+            {
+              "phoneType": "landline",
+              "phoneFormat": "north_american_numbering_plan",
+              "number": "2223331234"
+            }
+          ],
+          "addresses": [
+            {
+              "addressLine1": "14579 SE Creekside Dr",
+              "city": "Robertsdale",
+              "state": "OR",
+              "postalCode": "97267",
+              "country": "US"
+            }
+          ],
+          "email": "{{email}}",
+          "legalIdentifiers": [
+            {
+              "identifierType": "License Number",
+              "identifierValue": "D2224217041801",
+              "identifierJurisdiction": {
+                "country": "USA",
+                "body": "WI-DMV"
+              }
+            }
+          ],
+          "firstName": "Computer",
+          "middleName": "A",
+          "lastName": "Oregon",
+          "gender": "female",
+          "maritalStatus": "single",
+          "source": "confirmed_adpf"
+        }
+      }
+    ],
+    "insurableItems": [
+      {{vehicles}}
+    ],
+    "insurableItemParties": [
+      {{drivers}}
+    ],
+    "quoteRef": {
+      "sourceSystem": "clearcover-acquisition",
+      "sourceEntityId": "86fddb89-a294-4a10-807f-0d765bf3433c",
+      "sourceEntityType": "bind_attempt"
+    },
+    "usState": "US-OR",
+    "timeZone": "America/Los_Angeles",
+    "coverages": [
+      {{coverages}}
+    ],
+    "policyAmounts": [
+      {
+        "amountType": "writtenPremium",
+        "amountName": "written_premium",
+        "effectivePeriod": {
+          "startAt": "2022-01-13T07:00:00-06:00",
+          "endAt": "2022-07-13T22:00:00-07:00"
+        },
+        "amount": {
+          "currency": {
+            "code": "USD"
+          },
+          "value": {{premium}}
+        }
+      },
+      {
+        "amountType": "fullTermWrittenPremium",
+        "amountName": "total_premium_amount",
+        "effectivePeriod": {
+          "startAt": "2022-01-13T07:00:00-06:00",
+          "endAt": "2022-07-13T22:00:00-07:00"
+        },
+        "amount": {
+          "currency": {
+            "code": "USD"
+          },
+          "value": {{premium}}
+        }
+      }
+    ],
+    "paymentPlan": {
+      "paymentPlanDef":
+          {{paymentPlanDef}},
+      "paymentPlanRef": {
+        "sourceSystem": "clearcover-acquisition",
+        "sourceEntityId": "{{paymentPlanId}}",
+        "sourceEntityType": "payment_plan"
+      }
+    },
+    "ratingRef": {
+      "sourceSystem": "insurance-product",
+      "sourceEntityId": "{{rateId}}",
+      "sourceEntityType": "uuid"
+    },
+    "endorsements": [],
+    "assessments": {
+      "discounts": {{discounts}},
+      "alternatePremiums": []
+    }
+  },
+  "agreementParties": [
+    {
+      "partyType": "attributed_partner",
+      "partyRef": {
+        "sourceSystem": "clearcover-acquisition",
+        "sourceEntityId": "7f0cb46c-4116-49d9-8d84-580e936b2c16",
+        "sourceEntityType": "partner"
+      },
+      "partnerCommissionType": "bid",
+      "distributionChannel": "direct"
+    }
+  ],
+  "paymentMethod": {
+    "type": "CREDIT_CARD",
+    "cardHolder": "Computer Test",
+    "number": "4111111111111111",
+    "cvc": "737",
+    "expirationMonth": "03",
+    "expirationYear": "2030"
+  },
+  "paymentProduct": {
+    "fees": [],
+    "currency": "USD",
+    "totalFeesAmount": 0,
+    "totalPremiumAmount": {{premium}}
+  }
+}

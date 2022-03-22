@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "applicationId": "{{application_id}}"
+  },
+  "quoteType": "newBusiness",
+  "previousRateId": null,
+  "geographicLocation": "US-OR",
+  "bindDate": "{{startDate}}T07:00:00-06:00",
+  "effectiveDate": "{{startDate}}T07:00:00-06:00",
+  "insurableItems": [
+    {{vehicles}}
+  ],
+  "productType": "auto",
+  "policyDetail": {
+    "coverages": [
+      {{policyCoverages}}
+    ],
+    "endorsements": []
+  },
+  "policyRatingCharacteristics": {
+    "multiLineDescription": "none",
+    "homeownerStatus": "own",
+    "lengthOfTermMonths": 6,
+    "postalCode": "97232",
+    "priorInsurance": {
+      "previousBiLevel": "50M/100M",
+      "currentlyInsuredMonths": 24,
+      "isCurrentlyInsured": true,
+      "reportHit": false,
+      "source": {
+        "kind": "userReported"
+      }
+    },
+    "quoteSource": {
+      "partnerTier": 100,
+      "sourceOfBusiness": "internetSource",
+      "partnerCommissionType" : "bid",
+      "distributionChannel" : "direct"
+    },
+    "inceptionDaysFutureEffective" : 0
+  },
+  "parties": [
+    {{drivers}}
+  ]
+}
