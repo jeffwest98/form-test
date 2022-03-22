@@ -15,6 +15,7 @@ import kotlin.test.assertEquals
 class OregonTests : FormTests() {
     @Test
     fun testOne(testInfo: TestInfo){
+        // vehicles for policy
         var vehicleArray = arrayOf(
             Vehicle(
                 "1G8ZK8278WZ117818",
