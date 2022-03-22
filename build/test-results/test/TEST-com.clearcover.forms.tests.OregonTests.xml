@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.clearcover.forms.tests.OregonTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-22T21:46:47" hostname="Jeffrey-Fung-C02CH1DGMD6V.local" time="23.686">
-  <properties/>
-  <testcase name="testOne(TestInfo)" classname="com.clearcover.forms.tests.OregonTests" time="23.686"/>
-  <system-out><![CDATA[OR164761
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
