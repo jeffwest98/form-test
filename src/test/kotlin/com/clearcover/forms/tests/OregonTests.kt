@@ -217,11 +217,11 @@ class OregonTests : FormTests() {
         var newPolicyString = PdfHelper.readFile(saveDest)
         newPolicyString = newPolicyString.replace(
             bindResponse.jsonObject.getJSONObject("policy")["number"].toString(),
-            "OR164577"
+            "OR165590"
             )
         newPolicyString = newPolicyString.replace(
             driverArray[0].email,
-            "test+b976af14-a88f-4471-a0e7-d1b8762de4c5@clearcover.com"
+            "test+a804845a-6ab4-4f64-9bd1-7ee5fe65c15c@clearcover.com"
         )
         assertEquals(baselineString, newPolicyString)
     }
