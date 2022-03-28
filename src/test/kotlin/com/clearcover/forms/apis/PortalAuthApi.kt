@@ -13,6 +13,6 @@ class PortalAuthApi (val config: TestConfig){
                 "username" to config.authUserName,
                 "password" to config.authPassword
             )
-        )?.jsonObject["access_token"]?.toString() ?: null
+        ).jsonObject["access_token"]?.toString()
     }
 }
