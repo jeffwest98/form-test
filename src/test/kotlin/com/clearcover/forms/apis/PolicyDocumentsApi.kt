@@ -20,7 +20,7 @@ class PolicyDocumentsApi(val config: TestConfig) {
         expectedNumber: Int,
         documentName: String? = null,
         retries: Int? = null
-    ): ArrayList<Document>{
+    ): List<Document>{
         var maxTry = retries ?: config.documentWaitRetries;
         val requestUrl = "${config.policiesDomain}/api/v1/policies/$policyId/mailableDocuments"
         var documentList: JSONArray?
@@ -45,7 +45,7 @@ class PolicyDocumentsApi(val config: TestConfig) {
     }
 
     // starts at index 1
-    fun getDocument(list: ArrayList<Document> ,documentName: String, index: Int): Document?{
+    fun getDocument(list: List<Document> ,documentName: String, index: Int): Document?{
         var documentList: ArrayList<Document> = ArrayList()
         for(document in list){
             if(document.formName == documentName){
@@ -93,7 +93,7 @@ class PolicyDocumentsApi(val config: TestConfig) {
         }
     }
 
-    private fun getDocumentAssetIdList(jsonArray:JSONArray ,documentName: String? = null): ArrayList<Document>{
+    private fun getDocumentAssetIdList(jsonArray:JSONArray ,documentName: String? = null): List<Document>{
         var documentList: ArrayList<Document> = ArrayList()
         for(i in 0 until jsonArray.length()){
             val document = jsonArray.getJSONObject(i)

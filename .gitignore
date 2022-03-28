@@ -2,3 +2,4 @@ config.json
 **/build
 **/documents/*.pdf
 .DS_Store
+**/.gradle
